@@ -19,8 +19,8 @@ def readBinary(path):
 
 
 
-C3D_path='C3D_Features'
-C3D_path_seg='C3D_Features_Avg_py'
+C3D_path='Anomaly-Detection/C3D_Features'
+C3D_path_seg='Anomaly-Detection/C3D_Features_Avg_py'
 
 if not os.path.exists(C3D_path_seg):
     os.makedirs(C3D_path_seg)
