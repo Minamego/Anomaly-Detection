@@ -1,0 +1,1 @@
+GLOG_logtosterr=1 C3D/C3D-v1.0/build/tools/extract_image_features.bin  C3D/C3D-v1.0/examples/c3d_feature_extraction/prototxt/c3d_sport1m_feature_extractor_video.prototxt C3D/C3D-v1.0/conv3d_deepnetA_sport1m_iter_1900000 0 50 1 C3D/C3D-v1.0/examples/c3d_feature_extraction/prototxt/output_list_video_prefix.txt fc6-1
