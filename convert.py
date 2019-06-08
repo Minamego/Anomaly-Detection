@@ -20,7 +20,7 @@ def readBinary(path):
 
 
 C3D_path='Anomaly-Detection/C3D_Features'
-C3D_path_seg='Anomaly-Detection/C3D_Features_Avg_py'
+C3D_path_seg='Anomaly-Detection/C3D_Features_Avg'
 
 if not os.path.exists(C3D_path_seg):
     os.makedirs(C3D_path_seg)
@@ -46,17 +46,19 @@ for ifolder in all_folders:
     
     if np.sum(feature_vect) == 0:
         print("all data are zeros")
-        exit()
+        continue
 
     if np.sum( np.sum(feature_vect , 1) == 0  ):
         print("some rows are zeros")
-        exit()
+        continue
     
     if np.isnan(feature_vect).any():
         print("some values are missing")
+        continue
     
     if np.isinf(feature_vect).any():
         print("some values are inf")
+        continue
     
 
     # Now all is okay, time to store the features for 32 segments

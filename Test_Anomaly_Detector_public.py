@@ -94,7 +94,7 @@ print("Starting testing...")
 
 AllTest_Video_Path = 'Anomaly-Detection/C3D_Features_Avg'
 # AllTest_Video_Path contains C3D features (txt file)  of each video. Each file contains 32 features, each of 4096 dimensions.
-Results_Path = 'Anomaly-Detection/out'
+Results_Path = 'Anomaly-Detection/out/'
 # Results_Path is the folder where you can save your results
 Model_dir='Anomaly-Detection/'
 # Model_dir is the folder where we have placed our trained weights

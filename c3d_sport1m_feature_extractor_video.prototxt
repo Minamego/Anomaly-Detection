@@ -8,7 +8,7 @@ layers {
     source: "C3D/C3D-v1.0/examples/c3d_feature_extraction/prototxt/input_list_video.txt"
     use_image: false
     mean_file: "C3D/C3D-v1.0/examples/c3d_feature_extraction/sport1m_train16_128_mean.binaryproto"
-    batch_size: 100
+    batch_size: 50
     crop_size: 112
     mirror: false
     show_data: 0
