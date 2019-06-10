@@ -35,8 +35,14 @@ for ifolder in all_folders:
     folder_path = os.path.join(C3D_path , ifolder) 
     #folder_path is path of a folder which contains C3D features (for every 16 frames) for a paricular video.
     all_files = os.listdir(folder_path)
-    all_files.sort()
-
+    all_files_int = []
+    for i in range(len(all_files)):
+       all_files_int.append(int(all_files[i][0:-6]))
+    all_files_int.sort()
+    all_files = []
+    for i in range(len(all_files_int)):
+       all_files.append(str(all_files_int[i]) + ".fc6-1")
+    
     feature_vect = np.zeros((len(all_files) , 4096))
     for ifile in range(len(all_files)):
         file_path  = os.path.join(folder_path , all_files[ifile])
